@@ -1,10 +1,12 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
+const HtmlPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
   devtool: "cheap-module-source-map",
   entry: {
+    popup: path.resolve("./src/popup/index.tsx"),
     google: path.resolve("./src/content-scripts/google/index.tsx"),
   },
   module: {
@@ -32,6 +34,11 @@ module.exports = {
           to: path.resolve("dist/assets"),
         },
       ],
+    }),
+    new HtmlPlugin({
+      title: "React boilerplate",
+      filename: "popup.html",
+      chunks: ["popup"],
     }),
   ],
   resolve: {

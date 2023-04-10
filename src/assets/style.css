@@ -6,7 +6,7 @@
   z-index: 999;
 }
 
-.hello {
+.pean__hello {
   background: rgba(255, 255, 255, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
@@ -28,7 +28,7 @@
   transition: transform 250ms ease;
 }
 
-.hello:hover {
+.pean__hello:hover {
   transform: rotate(-5deg);
   cursor: pointer;
 }

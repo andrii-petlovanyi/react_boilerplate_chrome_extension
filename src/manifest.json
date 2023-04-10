@@ -15,5 +15,9 @@
       "js": ["google.js"],
       "css": ["./assets/style.css"]
     }
-  ]
+  ],
+  "action": {
+    "default_title": "Pean boilerplate",
+    "default_popup": "popup.html"
+  }
 }
