@@ -32,3 +32,9 @@
   transform: rotate(-5deg);
   cursor: pointer;
 }
+
+.pean__options {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}

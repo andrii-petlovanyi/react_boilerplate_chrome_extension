@@ -7,6 +7,7 @@ module.exports = {
   devtool: "cheap-module-source-map",
   entry: {
     popup: path.resolve("./src/popup/index.tsx"),
+    options: path.resolve("./src/options/index.tsx"),
     google: path.resolve("./src/content-scripts/google/index.tsx"),
   },
   module: {
@@ -19,6 +20,11 @@ module.exports = {
       {
         use: ["style-loader", "css-loader"],
         test: /\.css$/i,
+      },
+      {
+        type: "assets/resource",
+        use: "assets/resource",
+        test: /\.(png|jpg|jpeg|gif|woff|woff2|tff|eot|svg)$/,
       },
     ],
   },
@@ -35,13 +41,18 @@ module.exports = {
         },
       ],
     }),
-    ...getHtmlPlugins(["popup"]),
+    ...getHtmlPlugins(["popup", "options"]),
   ],
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
   output: {
     filename: "[name].js",
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
   },
 };
 

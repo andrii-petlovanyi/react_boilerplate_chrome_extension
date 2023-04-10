@@ -9,6 +9,7 @@
     "128": "/assets/icon128.png"
   },
   "permissions": ["tabs", "activeTab"],
+  "options_page": "options.html",
   "content_scripts": [
     {
       "matches": ["https://www.google.com/*"],
