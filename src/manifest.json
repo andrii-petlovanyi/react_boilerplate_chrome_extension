@@ -17,8 +17,21 @@
       "css": ["./assets/style.css"]
     }
   ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
   "action": {
     "default_title": "Pean boilerplate",
     "default_popup": "popup.html"
+  },
+  "commands": {
+    "start": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Run \"start\" on the current page."
+    }
   }
 }

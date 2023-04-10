@@ -3,12 +3,11 @@ const CopyPlugin = require("copy-webpack-plugin");
 const HtmlPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
-  devtool: "cheap-module-source-map",
   entry: {
     popup: path.resolve("./src/popup/index.tsx"),
     options: path.resolve("./src/options/index.tsx"),
     google: path.resolve("./src/content-scripts/google/index.tsx"),
+    background: path.resolve("./src/background/index.ts"),
   },
   module: {
     rules: [
@@ -48,11 +47,6 @@ module.exports = {
   },
   output: {
     filename: "[name].js",
-  },
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    },
   },
 };
 
