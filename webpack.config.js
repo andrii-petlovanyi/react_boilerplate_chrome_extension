@@ -35,11 +35,7 @@ module.exports = {
         },
       ],
     }),
-    new HtmlPlugin({
-      title: "React boilerplate",
-      filename: "popup.html",
-      chunks: ["popup"],
-    }),
+    ...getHtmlPlugins(["popup"]),
   ],
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
@@ -48,3 +44,14 @@ module.exports = {
     filename: "[name].js",
   },
 };
+
+function getHtmlPlugins(chunks) {
+  return chunks.map(
+    (chunk) =>
+      new HtmlPlugin({
+        title: "React boilerplate by pean.dev",
+        filename: `${chunk}.html`,
+        chunks: [chunk],
+      })
+  );
+}
