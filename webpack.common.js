@@ -4,10 +4,10 @@ const HtmlPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    popup: path.resolve("./src/popup/index.tsx"),
-    options: path.resolve("./src/options/index.tsx"),
-    google: path.resolve("./src/content-scripts/google/index.tsx"),
-    background: path.resolve("./src/background/index.ts"),
+    popup: path.resolve("./src/core/popup/index.tsx"),
+    options: path.resolve("./src/core/options/index.tsx"),
+    google: path.resolve("./src/core/content-scripts/google/index.tsx"),
+    background: path.resolve("./src/core/background/index.ts"),
   },
   module: {
     rules: [
