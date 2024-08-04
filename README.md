@@ -20,8 +20,8 @@ To get started, follow the steps below:
 - Enable developer mode.
 
 - Click on "Load Unpacked" and select the "dist" folder in the project's directory.
- Congratulations! You can now see your extension in action.
- 
+  Congratulations! You can now see your extension in action.
+
 If you encounter any issues or have any questions, please feel free to create an issue on this repository.
 
 Happy coding!
