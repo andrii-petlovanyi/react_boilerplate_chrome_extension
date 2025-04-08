@@ -88,6 +88,25 @@ npm run dev
 - `npm run dev` - Start development mode
 - `npm start` - Start production mode with watch
 - `npm run build` - Build for production
+- `npm run build:extension` - Build extension package
+  - Creates `extension` directory with all necessary files
+  - Updates manifest version
+  - Generates ZIP archive for Chrome Web Store
+- `npm run build:all` - Full build process
+  - Builds React application
+  - Packages extension
+  - Creates final ZIP archive
+
+The build process includes:
+1. **Cleaning** - Removes previous build artifacts
+2. **Building** - Compiles React application
+3. **Packaging** - Copies extension files
+4. **Archiving** - Creates ZIP package
+
+Output files:
+- `dist/` - Production build files
+- `extension/` - Extension package
+- `extension-vX.X.X.zip` - Final archive for Chrome Web Store
 
 ## 🎯 Import Aliases
 

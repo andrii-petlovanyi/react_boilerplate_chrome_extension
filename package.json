@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "webpack --watch --progress --config webpack.dev.js",
     "start": "webpack --watch --progress --config webpack.prod.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "build:extension": "ts-node --project tsconfig.scripts.json scripts/build.ts",
+    "build:all": "npm run build && npm run build:extension"
   },
   "keywords": [
     "chrome",
@@ -38,9 +40,11 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@types/archiver": "^5.3.4",
     "@types/chrome": "^0.0.313",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.1",
+    "archiver": "^6.0.2",
     "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^6.0.0",
@@ -48,6 +52,7 @@
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "webpack": "^5.99.2",
     "webpack-cli": "^6.0.1",
