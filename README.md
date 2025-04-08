@@ -2,15 +2,15 @@
 
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/andrii-petlovanyi/react-chrome-extension)](https://github.com/andrii-petlovanyi/react-chrome-extension/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/andrii-petlovanyi/react-chrome-extension)](https://github.com/andrii-petlovanyi/react-chrome-extension/network)
-[![GitHub issues](https://img.shields.io/github/issues/andrii-petlovanyi/react-chrome-extension)](https://github.com/andrii-petlovanyi/react-chrome-extension/issues)
-[![GitHub license](https://img.shields.io/github/license/andrii-petlovanyi/react-chrome-extension)](https://github.com/andrii-petlovanyi/react-chrome-extension/blob/main/LICENSE)
-[![npm version](https://badge.fury.io/js/react-chrome-extension.svg)](https://www.npmjs.com/package/react-chrome-extension)
+[![GitHub stars](https://img.shields.io/github/stars/andrii-petlovanyi/react_boilerplate_chrome_extension)](https://github.com/andrii-petlovanyi/react_boilerplate_chrome_extension/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/andrii-petlovanyi/react_boilerplate_chrome_extension)](https://github.com/andrii-petlovanyi/react_boilerplate_chrome_extension/network)
+[![GitHub issues](https://img.shields.io/github/issues/andrii-petlovanyi/react_boilerplate_chrome_extension)](https://github.com/andrii-petlovanyi/react_boilerplate_chrome_extension/issues)
+[![GitHub license](https://img.shields.io/github/license/andrii-petlovanyi/react_boilerplate_chrome_extension)](https://github.com/andrii-petlovanyi/react_boilerplate_chrome_extension/blob/main/LICENSE)
+
 
 Modern, feature-rich boilerplate for creating Chrome extensions using React, TypeScript, and Webpack 5. Get started with Chrome extension development in minutes!
 
-[Report Bug](https://github.com/andrii-petlovanyi/react-chrome-extension/issues) · [Request Feature](https://github.com/andrii-petlovanyi/react-chrome-extension/issues)
+[Report Bug](https://github.com/andrii-petlovanyi/react_boilerplate_chrome_extension/issues) · [Request Feature](https://github.com/andrii-petlovanyi/react_boilerplate_chrome_extension/issues)
 
 </div>
 
@@ -51,8 +51,8 @@ Modern, feature-rich boilerplate for creating Chrome extensions using React, Typ
 Click the "Use this template" button above
 
 # Or clone the repository
-git clone https://github.com/andrii-petlovanyi/react-chrome-extension.git
-cd react-chrome-extension
+git clone https://github.com/andrii-petlovanyi/react_boilerplate_chrome_extension.git
+cd react_boilerplate_chrome_extension
 ```
 
 2. Install dependencies:
@@ -118,11 +118,11 @@ Give a ⭐️ if this project helped you!
 
 👤 **Andrii Petlovanyi**
 - GitHub: [@andrii-petlovanyi](https://github.com/andrii-petlovanyi)
-- LinkedIn: [@andrii-petlovanyi](https://linkedin.com/in/andrii-petlovanyi)
+- LinkedIn: [@andrii-petlovanyi](https://linkedin.com/in/andriipetlovanyi)
 
 ## 📫 Contact
 
 Have a question? Feel free to reach out!
 - Email: andrii.petlovanyi@gmail.com
-- LinkedIn: [@andrii-petlovanyi](https://linkedin.com/in/andrii-petlovanyi)
-- GitHub Issues: [Create an issue](https://github.com/andrii-petlovanyi/react-chrome-extension/issues)
+- LinkedIn: [@andrii-petlovanyi](https://linkedin.com/in/andriipetlovanyi)
+- GitHub Issues: [Create an issue](https://github.com/andrii-petlovanyi/react_boilerplate_chrome_extension/issues)
