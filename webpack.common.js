@@ -21,7 +21,7 @@ module.exports = {
         test: /\.css$/i,
       },
       {
-        type: "assets/resource",
+        type: "asset/resource",
         test: /\.(png|jpg|jpeg|gif|woff|woff2|tff|eot|svg)$/,
       },
     ],
@@ -46,6 +46,14 @@ module.exports = {
   },
   output: {
     filename: "[name].js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
+  },
+  cache: {
+    type: 'filesystem',
+    buildDependencies: {
+      config: [__filename],
+    },
   },
 };
 
