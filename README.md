@@ -123,6 +123,6 @@ Give a ⭐️ if this project helped you!
 ## 📫 Contact
 
 Have a question? Feel free to reach out!
-- Email: andrii.petlovanyi@gmail.com
+- Email: andrey.petlovany@gmail.com
 - LinkedIn: [@andrii-petlovanyi](https://linkedin.com/in/andriipetlovanyi)
 - GitHub Issues: [Create an issue](https://github.com/andrii-petlovanyi/react_boilerplate_chrome_extension/issues)
