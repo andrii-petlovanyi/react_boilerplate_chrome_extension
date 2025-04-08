@@ -9,16 +9,28 @@ const EXTENSION_DIR = 'extension';
 // Get version from package.json or environment variable
 function getVersion(): string {
   // Try to get version from environment variable (GitHub Actions)
-  if (process.env.GITHUB_REF_NAME) {
-    return process.env.GITHUB_REF_NAME;
+  if (process.env.EXTENSION_VERSION) {
+    return process.env.EXTENSION_VERSION;
   }
   
   // Try to get version from package.json
   try {
     const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf-8'));
-    return packageJson.version;
+    if (packageJson.version) {
+      return packageJson.version;
+    }
   } catch (error) {
     console.warn('⚠️ Could not read version from package.json');
+  }
+  
+  // Try to get version from manifest.json
+  try {
+    const manifest = JSON.parse(fs.readFileSync('src/manifest.json', 'utf-8'));
+    if (manifest.version) {
+      return manifest.version;
+    }
+  } catch (error) {
+    console.warn('⚠️ Could not read version from manifest.json');
   }
   
   // Default version
@@ -26,6 +38,7 @@ function getVersion(): string {
 }
 
 const VERSION = getVersion();
+console.log(`📦 Building extension version: ${VERSION}`);
 
 // Clean directories
 function cleanDirectories(): void {
