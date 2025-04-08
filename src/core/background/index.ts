@@ -1,3 +1,3 @@
 chrome.commands.onCommand.addListener(() => {
-  console.log("Hello, this ");
+  console.log("Hello, your extension is working!");
 });

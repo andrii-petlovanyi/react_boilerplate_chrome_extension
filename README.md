@@ -126,3 +126,54 @@ Have a question? Feel free to reach out!
 - Email: andrey.petlovany@gmail.com
 - LinkedIn: [@andrii-petlovanyi](https://linkedin.com/in/andriipetlovanyi)
 - GitHub Issues: [Create an issue](https://github.com/andrii-petlovanyi/react_boilerplate_chrome_extension/issues)
+
+## Project Structure
+
+```
+src/
+├── assets/         # Static assets (images, fonts, etc.)
+├── components/     # React components
+├── core/          # Core extension functionality
+├── hooks/         # React hooks
+│   ├── useMessage.ts  # Hook for message handling
+│   ├── useStorage.ts  # Hook for storage management
+│   └── index.ts       # Hooks exports
+├── services/      # API and data services
+├── styles/        # Styles and CSS modules
+├── types/         # TypeScript types and interfaces
+├── utils/         # Utility functions
+└── manifest.json  # Extension configuration
+```
+
+## Core Features
+
+- **Type Safety**: Full TypeScript support with strict type checking
+- **Message System**: Type-safe message passing between extension parts
+- **Storage Management**: Safe and type-checked storage operations
+- **Component Architecture**: Reusable React components with proper typing
+- **Development Tools**: Hot reloading and source maps for development
+
+## Development Setup
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Start development server:
+```bash
+npm run dev
+```
+
+3. Build for production:
+```bash
+npm run build
+```
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

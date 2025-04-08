@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Hello } from "@/components/Hello";
+import { Greeting } from "@/components/Greeting";
 
 const container = document.createElement("div");
 document.body.appendChild(container);
@@ -10,6 +10,6 @@ const root = createRoot(container);
 
 root.render(
   <div className={"pean"}>
-    <Hello />
+    <Greeting />
   </div>
 );
